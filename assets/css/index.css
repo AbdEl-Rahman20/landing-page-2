@@ -1,0 +1,779 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+}
+
+.side__nav {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    background-color: #1e293b;
+}
+
+.nav__part1 {
+    padding-bottom: 50px;
+}
+
+.nav__logo img {
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Active {
+    color: #8b5cf6;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.nav__icons {
+    color: #637084;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.nav__img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav__img img:hover {
+    border: 3px solid #0f172a;
+    outline: 1px solid #637084;
+    transition-duration: .1s;
+}
+
+.container__header {
+    max-width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar__icon {
+    color: #8b5cf6;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.title__header {
+    display: flex;
+    gap: 25px;
+}
+
+.title__header h1 {
+    color: #efeff0;
+}
+
+.icons__header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.dark__icons {
+    color: #facc15;
+    background-color: #1e293b;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.icons {
+    color: #637084;
+    background-color: #1e293b;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.icons:hover {
+    border: 3px solid #0f172a;
+    outline: 1px solid #637084;
+    padding-top: 7px;
+    transition-duration: .1s;
+}
+
+.imgs__header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.imgs__header img:hover {
+    border: 3px solid #0f172a;
+    outline: 1px solid #637084;
+    transition-duration: .1s;
+}
+
+main {
+    padding: 100px 0px;
+    max-width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    grid-template-areas: "Cards Transfer Money"
+        "Cards Overall Money"
+        "Cards History History"
+        "Transactions History History"
+        "Transactions History History";
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Cards {
+    grid-area: Cards;
+    background-color: #1e293b;
+}
+
+.Transfer {
+    grid-area: Transfer;
+    background-color: #1e293b;
+}
+
+.Overall {
+    grid-area: Overall;
+    background-color: #1e293b;
+}
+
+.Money {
+    grid-area: Money;
+    background-color: #1e293b;
+}
+
+.Transactions {
+    grid-area: Transactions;
+    background-color: #1e293b;
+}
+
+.History {
+    grid-area: History;
+    background-color: #1e293b;
+}
+
+
+.content__cards {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.header__cards h3 {
+    color: #efeff0;
+}
+
+.card__icon {
+    color: #afb5bc;
+    background-color: #334155;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 13px;
+}
+
+.card__icon:hover {
+    background-color: #637084;
+    transition-duration: .5s;
+}
+
+.visa__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.visa1 {
+    width: 125px;
+    height: 85px;
+    background-color: #8b5cf6;
+    border-radius: 15px;
+}
+
+.visa2 {
+    width: 125px;
+    height: 85px;
+    background-color: #14b8a6;
+    border-radius: 15px;
+}
+
+.header__visa {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    color: #efeff0;
+    align-items: center;
+}
+
+.header__visa p {
+    font-size: smaller;
+}
+
+.visacard__icon {
+    font-size: 25px;
+}
+
+.footer__visa {
+    font-size: smaller;
+    color: #efeff0;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.Balance__visa h6 {
+    color: #afb5bc;
+}
+
+.Balance__visa h2 {
+    color: #efeff0;
+}
+
+.more__icon {
+    color: #afb5bc;
+    background-color: #1e293b;
+    border-radius: 50%;
+    border: 1px solid #334155;
+    cursor: pointer;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 13px;
+}
+
+.more__icon:hover {
+    border: 3px solid #0f172a;
+    outline: 1px solid #637084;
+    padding-top: 10px;
+    padding-left: 11px;
+    transition-duration: .1s;
+}
+
+.cards__items {
+    display: flex;
+    justify-content: space-between;
+    color: #efeff0;
+    padding-top: 30px;
+    line-height: 35px;
+}
+
+.info__items {
+    color: #afb5bc;
+    text-align: end;
+}
+
+.cards__items a {
+    text-decoration: none;
+    color: #8b5cf6;
+}
+
+.cards__items a:hover {
+    text-decoration: underline;
+}
+
+.sec__info {
+    display: flex;
+    gap: 5px;
+    padding-left: 60px;
+}
+
+.active__icon {
+    color: #10b981;
+    font-size: 7px;
+}
+
+.last__info {
+    display: flex;
+    gap: 5px;
+}
+
+.visa__info {
+    font-size: 30px;
+}
+
+.dash {
+    margin: 30px 0px;
+    color: #334155;
+    border: 1px dashed;
+}
+
+.content__transfer {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__transfer h3 {
+    color: #efeff0;
+    padding-bottom: 10px;
+}
+
+.label__transfer {
+    width: 100%;
+    height: 40px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.right__label {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.img__label img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.right__label h4 {
+    color: #efeff0;
+    padding-top: 5px;
+}
+
+.icone__label {
+    color: #afb5bc;
+    border-left: 1px solid #334155;
+    font-size: smaller;
+    padding: 12px 15px;
+}
+
+.footer__transfer p {
+    color: #afb5bc;
+    font-size: smaller;
+    padding-bottom: 5px;
+}
+
+.footer__transfer a {
+    text-decoration: none;
+    color: #8b5cf6;
+    padding-left: 215px;
+}
+
+.footer__transfer a:hover {
+    text-decoration: underline;
+}
+
+.content__overall {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__overall {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.header__overall h3 {
+    color: #efeff0;
+}
+
+.header__overall h6 {
+    color: #afb5bc;
+    font-size: 15px;
+}
+
+.loading__overall {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #303d51;
+}
+
+.dash__loading {
+    width: 70%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #8b5cf6;
+}
+
+.footer__overall p {
+    color: #afb5bc;
+    font-size: smaller;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer__overall a {
+    text-decoration: none;
+    color: #8b5cf6;
+    padding-left: 290px;
+}
+
+.footer__overall a:hover {
+    text-decoration: underline;
+}
+
+.content__money {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__money {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.header__money h3 {
+    color: #efeff0;
+}
+
+.header__money a {
+    color: #afb5bc;
+    text-decoration: none;
+}
+
+.header__money a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+.icons__money {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.img__money__icon img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.money__icon1 {
+    color: #ebc321;
+    background-color: #4a4a33;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 9px;
+}
+
+.money__icon2 {
+    color: #6182f7;
+    background-color: #323d61;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+
+.icons__content__money {
+    padding-bottom: 20px;
+}
+
+.icons__content__money a {
+    color: #afb5bc;
+    text-decoration: none;
+}
+
+.icons__content__money a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+.money__labels {
+    padding-bottom: 10px;
+}
+
+.labels__money {
+    color: #afb5bc;
+    display: flex;
+    gap: 10px;
+}
+
+.header__labels__money {
+    padding-top: 10px;
+    color: #afb5bc;
+    display: flex;
+    gap: 15px;
+}
+
+.dollar__label {
+    width: 60px;
+    height: 40px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.zero__label {
+    width: 265px;
+    height: 40px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+}
+
+.dollar__label h5 {
+    color: #efeff0;
+    font-size: larger;
+}
+
+.currency__icon {
+    color: #afb5bc;
+    font-size: smaller;
+}
+
+.zero__label h5 {
+    color: #afb5bc;
+    font-size: larger;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.footer__money p {
+    color: #afb5bc;
+    font-size: smaller;
+    padding-bottom: 10px;
+}
+
+.footer__money button {
+    width: 100%;
+    height: 40px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer__money button:hover {
+    background-color: #a987f8;
+    transition-duration: .5s;
+}
+
+.content__transaction {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__transaction {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header__transaction h3 {
+    color: #efeff0;
+
+}
+
+.header__transaction a {
+    color: #afb5bc;
+    text-decoration: none;
+}
+
+.header__transaction a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+.line__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.icon__details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon__transaction1 {
+    color: #14b8a6;
+    background-color: #1d3846;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 13px;
+}
+
+.icon__transaction2 {
+    color: #f97316;
+    background-color: #343137;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 13px;
+}
+
+.icon__transaction3 {
+    color: #6366f1;
+    background-color: #252f4e;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 13px;
+}
+
+.date__transaction {}
+
+.date__transaction h4 {
+    color: #efeff0;
+}
+
+.date__transaction p {
+    color: #afb5bc;
+    font-size: smaller;
+}
+
+.price__transaction {
+    color: #efeff0;
+}
+
+.content__history {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.header__history {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header__history h3 {
+    color: #efeff0;
+
+}
+
+.header__history a {
+    color: #afb5bc;
+    text-decoration: none;
+}
+
+.header__history a:hover {
+    color: #8b5cf6;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+
+.icons__history {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.ex__icon {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.ex__icon p {
+    color: #afb5bc;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.er__icon {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.er__icon p {
+    color: #afb5bc;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.fr__icon {
+    color: #8b5cf6;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sec__icon {
+    color: #10b981;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.img__history img {
+    width: 650px;
+    height: 350px;
+}
